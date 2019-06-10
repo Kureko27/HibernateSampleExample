@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javawebtutor.controller.AdminLogIn">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="27.0" layoutY="19.0" prefHeight="85.0" prefWidth="309.0" text="Zaloguj się Adminie!">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="99.0" prefWidth="104.0" text="Password: ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="135.0" prefHeight="45.0" prefWidth="127.0" text="UserName: ">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField layoutX="173.0" layoutY="97.0" />
+            <PasswordField layoutX="173.0" layoutY="145.0" />
+            <Button layoutX="29.0" layoutY="202.0" mnemonicParsing="false" onAction="#LogIn" text="LogIn" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <property name="hbm2ddl.auto">update</property>  
+        <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>  
+        <property name="hibernate.connection.url">jdbc:sqlserver://153.19.7.13:1401</property>  
+        <property name="hibernate.connection.username">zkulesza</property>  
+        <property name="hibernate.connection.password">250992</property>  
+        <property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>  
+             <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <mapping class="org.o7.planning.adres"/>
+        <mapping class="org.o7.planning.dzial"/>
+        <mapping class="org.o7.planning.egzemplarz"/>
+        <mapping class="org.o7.planning.jezyk"/>
+        <mapping class="org.o7.planning.klientPubliczny"/>
+        <mapping class="org.o7.planning.klientSamodzielny"/>
+        <mapping class="org.o7.planning.nosnik"/>
+        <mapping class="org.o7.planning.oddzial"/>
+        <mapping class="org.o7.planning.pracownik"/>
+        <mapping class="org.o7.planning.stanTytulu"/>
+        <mapping class="org.o7.planning.tytul"/>
+        
+     <!--  <mapping resource="Userr.hbm.xml" />  --> 
+    </session-factory>  
+</hibernate-configuration> 
