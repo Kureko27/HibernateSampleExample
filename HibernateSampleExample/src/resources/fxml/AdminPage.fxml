@@ -18,7 +18,7 @@
                 <TableColumn prefWidth="75.0" text="C2" />
               </columns>
             </TableView>
-            <Button layoutX="13.0" layoutY="38.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="109.0" text="Edit" />
+            <Button layoutX="13.0" layoutY="38.0" mnemonicParsing="false" onAction="#edit" prefHeight="26.0" prefWidth="109.0" text="Add" />
             <Button layoutX="8.0" layoutY="79.0" mnemonicParsing="false" onAction="#showPracownicy" text="View Pracownik" />
             <Button layoutX="10.0" layoutY="360.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="120.0" text="Wroc" />
             <Button layoutX="10.0" layoutY="117.0" mnemonicParsing="false" onAction="#showTytuly" prefHeight="26.0" prefWidth="119.0" text="View Tytuly" />
