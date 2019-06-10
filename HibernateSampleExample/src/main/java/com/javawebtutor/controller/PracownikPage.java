@@ -1,6 +1,8 @@
 package com.javawebtutor.controller;
 
-import java.awt.event.ActionEvent;
+import com.javawebtutor.FXMLUtil;
+
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 
@@ -11,6 +13,7 @@ public class PracownikPage {
 
     @FXML
     void goBack(ActionEvent event) {
+    	FXMLUtil.closeWindow(event);
 
     }
 

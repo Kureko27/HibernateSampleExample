@@ -1,41 +1,39 @@
 package com.javawebtutor.controller;
 
-import java.awt.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.event.ActionEvent;
 
-import javafx.event.Event;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.layout.TilePane;
-
-import java.util.prefs.Preferences;
+import com.javawebtutor.FXMLUtil;
 
 public class Home {
 
     @FXML
     void exit(ActionEvent event) {
-    	//FXMLUtil.showAndCloseWindow(event, "/fxml/Home.fxml", "Logowanie");
+    	FXMLUtil.closeWindow(event);
 
     }
 
     @FXML
     void goToAdminPage(ActionEvent event) {
-    	
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/AdminLogIn.fxml", "Admin");
 
     }
 
     @FXML
     void goToKlientPubPage(ActionEvent event) {
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientPublicznyLogIn.fxml", "KlientPub");
 
     }
 
     @FXML
     void goToKlientSamPage(ActionEvent event) {
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientSamodzielnyLogIn.fxml", "KlientSam");
 
     }
 
     @FXML
     void goToPracownikPage(ActionEvent event) {
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/PracownikLogIn.fxml", "Pracownik");
 
     }
 

@@ -2,7 +2,10 @@ package com.javawebtutor.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
-import java.awt.event.ActionEvent;
+
+import com.javawebtutor.FXMLUtil;
+
+import javafx.event.ActionEvent;
 
 public class klientPubPage {
 
@@ -11,6 +14,7 @@ public class klientPubPage {
 
     @FXML
     void goBack(ActionEvent event) {
+    	FXMLUtil.closeWindow(event);
 
     }
 
