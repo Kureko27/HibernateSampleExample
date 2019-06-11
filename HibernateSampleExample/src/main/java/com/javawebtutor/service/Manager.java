@@ -6,6 +6,7 @@ import org.hibernate.SessionFactory;
 
 import com.javawebtutor.model.HibernateUtil;
 import com.javawebtutor.model.KlientPubliczny;
+import com.javawebtutor.model.KlientSamodzielny;
 import com.javawebtutor.model.Pracownik;
 import com.javawebtutor.model.Tytul;
 
@@ -36,7 +37,7 @@ public class Manager {
 		return sessionFactory.getCurrentSession().getNamedQuery("pracownik.all").list();
 	}
 	
-	public void addPracownik(KlientPubliczny klientPubliczny) {
+	public void addKlientPubliczny(KlientPubliczny klientPubliczny) {
 		klientPubliczny.setid_klientPubliczny(null);
 		sessionFactory.getCurrentSession().persist(klientPubliczny);
 	}
@@ -44,6 +45,16 @@ public class Manager {
 	@SuppressWarnings("unchecked")
 	public List<KlientPubliczny> getAllKlientPuliczny() {
 		return sessionFactory.getCurrentSession().getNamedQuery("klientPubliczny.all").list();
+	}
+	
+	public void addKlientSamodzielny(KlientSamodzielny klientSamodzielny) {
+		klientSamodzielny.setid_klientSamodzielny(null);
+		sessionFactory.getCurrentSession().persist(klientSamodzielny);
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<KlientSamodzielny> getAllKlientSamodzielny() {
+		return sessionFactory.getCurrentSession().getNamedQuery("klientSamodzielny.all").list();
 	}
 	
 		

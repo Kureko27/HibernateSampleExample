@@ -97,7 +97,7 @@ public class KlientPubliczny{
 
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "id_oddzial", nullable = false)
-  public Oddzial getOdzial(){
+  public Oddzial getOddzial(){
     return id_oddzial;
   }
   public void setOddzial(Oddzial id_oddzial){
