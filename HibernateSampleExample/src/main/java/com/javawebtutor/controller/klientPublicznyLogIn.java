@@ -9,7 +9,7 @@ public class klientPublicznyLogIn {
 
     @FXML
     void LogIn(ActionEvent event) {
-    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientPublicznyLogIn.fxml", "KlientPubLogIn");
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientPubPage.fxml", "KlientPubLogIn");
 
     }
 

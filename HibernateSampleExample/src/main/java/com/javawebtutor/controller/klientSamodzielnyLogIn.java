@@ -9,7 +9,7 @@ public class klientSamodzielnyLogIn {
 
     @FXML
     void LogIn(ActionEvent event) {
-    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientSamodzielnyLogIn.fxml", "KlientSamLogIn");
+    	FXMLUtil.showAndCloseWindow(event, "/fxml/klientSamPage.fxml", "KlientSamLogIn");
 
     }
 
